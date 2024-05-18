@@ -6,7 +6,7 @@ Esta es una aplicación JavaFX que se conecta a una base de datos MySQL y muestr
 
 - Interfaz gráfica de usuario (GUI) con JavaFX.
 - Conexión a una base de datos MySQL.
-- Recuperación y visualización de datos de dos tablas (`posts` y `users`).
+- Recuperación y visualización de datos de dos tablas (`book` y `user`).
 - Botones para iniciar la recuperación de datos.
 - Diseño responsivo y moderno.
 
@@ -26,7 +26,7 @@ Esta es una aplicación JavaFX que se conecta a una base de datos MySQL y muestr
     ```
 
 2. Configura la base de datos MySQL:
-    - Crea una base de datos y las tablas necesarias (`books` y `users`).
+    - Crea una base de datos y las tablas necesarias (`book` y `user`).
     - Inserta datos de prueba en las tablas.
 
 3. Configura las credenciales de la base de datos en el archivo `application.properties` o directamente en el código:
