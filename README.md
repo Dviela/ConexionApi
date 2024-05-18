@@ -1,6 +1,6 @@
 # ConexionAPI
 
-Esta es una aplicación JavaFX que se conecta a una base de datos MySQL y muestra datos en listas. La aplicación permite recuperar y mostrar datos de dos tablas diferentes (`posts` y `users`) utilizando botones para iniciar las consultas.
+Esta es una aplicación JavaFX que se conecta a una base de datos MySQL y muestra datos en listas. La aplicación permite recuperar y mostrar datos de dos tablas diferentes (`book` y `user`) utilizando botones para iniciar las consultas.
 
 ## Características
 
