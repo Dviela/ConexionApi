@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox spacing="10" alignment="center" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svalero.ConexionApi.AppController">
-    <Button fx:id="fetchPostsButton" text="Fetch Posts" />
-    <ListView fx:id="postsListView" />
-
-    <Button fx:id="fetchUsersButton" text="Fetch Users" />
-    <ListView fx:id="usersListView" />
-</VBox>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svalero.ConexionApi.AppController">
+    <top>
+        <HBox spacing="20" alignment="center">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <Button fx:id="fetchBooksButton" text="Fetch Books" style="-fx-text-fill: blue;"/>
+            <Button fx:id="fetchUsersButton" text="Fetch Users" style="-fx-text-fill: red;" />
+        </HBox>
+    </top>
+    <center>
+        <HBox spacing="40">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <VBox spacing="20" alignment="center" style="-fx-background-color: #f0f0f0; -fx-padding: 10;">
+                <ListView fx:id="booksListView" prefWidth="600" prefHeight="800" />
+            </VBox>
+            <VBox spacing="20" alignment="center" style="-fx-background-color: #f0f0f0; -fx-padding: 10;">
+                <ListView fx:id="usersListView" prefWidth="600" prefHeight="800" />
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>

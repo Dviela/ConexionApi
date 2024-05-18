@@ -11,11 +11,11 @@ import java.util.List;
 public class AppController {
 
     @FXML
-    private ListView<String> postsListView;
+    private ListView<String> booksListView;
     @FXML
     private ListView<String> usersListView;
     @FXML
-    private Button fetchPostsButton;
+    private Button fetchBooksButton;
     @FXML
     private Button fetchUsersButton;
 
@@ -23,14 +23,14 @@ public class AppController {
 
     @FXML
     public void initialize() {
-        fetchPostsButton.setOnAction(event -> {
+        fetchBooksButton.setOnAction(event -> {
             new Thread(() -> {
                 try {
                     List<String> posts = apiService.getBooks();
 
                     Platform.runLater(() -> {
-                        postsListView.getItems().clear();
-                        postsListView.getItems().addAll(posts);
+                        booksListView.getItems().clear();
+                        booksListView.getItems().addAll(posts);
                     });
                 } catch (Exception e) {
                     e.printStackTrace();
